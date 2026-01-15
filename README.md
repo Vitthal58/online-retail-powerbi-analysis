@@ -1,25 +1,27 @@
-# Online Retail Data Analysis
+# Online Retail Power BI Analysis
 
-## Project Overview
-This project analyzes an online retail dataset using Python and Power BI.
-The goal is to answer key business questions from the CEO and CMO.
+## Overview
+This project analyzes an online retail dataset to answer key business questions
+raised by the CEO and CMO using Power BI.
 
 ## Tools Used
-- Python (pandas, matplotlib, seaborn, plotly)
 - Power BI Desktop
-
-## Business Questions Answered
-1. Monthly revenue trend for 2011
-2. Top 10 revenue-generating countries (excluding UK)
-3. Top 10 customers by revenue
-4. Country-wise product demand for expansion strategy
+- Power Query (Data Cleaning)
+- Basic DAX Measures
 
 ## Data Cleaning
-- Removed negative quantities
-- Removed negative unit prices
-- Created revenue metric
+- Removed transactions with Quantity < 1
+- Removed transactions with Unit Price < 0
+- Created Revenue column (Quantity × Unit Price)
+
+## Business Questions Answered
+1. Monthly revenue trend for the year 2011 (seasonality analysis)
+2. Top 10 revenue-generating countries excluding the United Kingdom
+3. Top 10 customers by revenue in descending order
+4. Country-wise product demand to identify expansion opportunities (excluding UK)
+
+## Output
+- Interactive Power BI dashboard (.pbix)
 
 ## Status
-🚧 Work in progress
-# online-retail-powerbi-analysis
-Power BI &amp; Python analysis of online retail sales data.
+✅ Completed
